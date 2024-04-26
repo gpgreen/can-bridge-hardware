@@ -12,6 +12,7 @@ The CAN controller on the Nucleo dev board, is routed to a MCP2551 transceiver o
 arduino daughter board. The two CAN outputs from the transceiver go to the CAN1 connector on
 the daughter board. This connector is pinned:
 
+```
  +---+
  | o | NC
 [| o | CANH
@@ -19,14 +20,14 @@ the daughter board. This connector is pinned:
  | o | NC
  +---+
   CAN1
+```
 
 A 120 ohm terminating resistor is also on the board. To use this resistor, set the DIP switch
 position 1 to on.
 
 ## Firmware
 
-The firmware is designed to be used with Serial CAN from the canutils project. Rust-based
-firmware project is here ![firmware](https://github.com/gpgreen/slcan-bridge.git)
+The firmware is designed to be used with Serial CAN from the canutils project. Rust-based ![firmware](https://github.com/gpgreen/slcan-bridge.git) project.
 
 ## Schematics
 
